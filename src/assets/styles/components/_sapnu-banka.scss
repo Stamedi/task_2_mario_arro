@@ -1,0 +1,227 @@
+.sb-video-container {
+    position: relative;
+}
+
+.sb-video {
+    width: 100%;
+}
+
+.sapnu-banka-container > h1 {
+    text-align: center;
+    color: $dark-blue;
+    font-size: 48px;
+    padding-top: 85px;
+    padding-bottom: 60px;
+    font-family: $oswald;
+    font-weight: 500;
+}
+
+.sb-play-btn {
+    @media (min-width: 811px) {
+        top: 42%;
+        left: 45.5%;
+    }
+    @media (max-width: 600px) {
+        top: 25%;
+        left: 35%;
+    }
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.merkis-container > h2 {
+
+    @media (max-width: 600px) {
+        font-size: 24px;
+    }
+    padding-bottom: 90px;
+    padding-top: 150px;
+    text-align: center;
+    color: $dark-blue;
+    font-weight: 500;
+    font-family: $oswald;
+    font-size: 30px;
+}
+
+
+.merkis2-before {
+    @media (max-width: 600px) {
+        display: none;
+    }
+    display: block;
+}
+
+.merkis2-after {
+    @media (max-width: 600px) {
+        display: block;
+    }
+    display: none;
+}
+
+
+.merkis1,
+.merkis2,
+.merkis3 {
+    @media (max-width: 600px) {
+        flex-direction: column;
+        text-align: center;
+        margin:0;
+        padding: 0;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.merkis1 > p,
+.merkis2 > p,
+.merkis3 > p {
+    @media (min-width: 811px) {
+        max-width:37%;
+    }
+    @media (max-width: 600px) {
+        padding-top: 20px;
+        font-size: 12px;
+        max-width: 75%;
+    }
+    max-width: 47%;
+    font-size: 18px;
+    color: $dark-blue;    
+}
+
+.merkis1,
+.merkis3 {
+    @media (max-width: 600px) {
+        margin-left: 0;
+    }
+    margin-left: 7.5%;
+}
+
+.merkis1 > img,
+.merkis3 > img {
+    @media (max-width: 600px) {
+        padding-right: 0;
+    }
+    padding-right: 60px;
+}
+
+.merkis2 {
+    @media (max-width: 600px) {
+        padding: 60px 0 60px 0;
+        padding-right: 0;
+    }
+    padding: 100px 0 110px 0;
+    padding-right: 23.5%;
+}
+
+.merkis2 > p {
+    @media (max-width: 600px) {
+        text-align: unset;
+        padding-right: 0;
+    }
+    text-align: end;
+    padding-right: 67px;
+}
+
+.misija-container {
+    text-align: center;
+}
+
+.misija-container > h2 {
+    @media (max-width: 600px) {
+        font-size: 24px;
+    }
+    padding-top: 150px;
+    color: $dark-blue;
+    font-size: 30px;
+    font-family: $oswald;
+    font-weight: 500;
+}
+
+.misija-container > p {
+    @media (max-width: 600px) {
+        font-size: 18px;
+    }
+    font-size: 24px;
+    color: $dark-blue;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
+
+.sb-ripped-container {
+    @media (max-width: 600px) {
+        margin-top: 120px;
+    }
+    background: url('../../img/rippedSapnuBanka.png');
+    background-size: cover;
+    height: 533px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sb-ripped-container > img {
+    @media (max-width: 600px) {
+        width: 90%;
+    }
+    padding-top: 75px;
+    height: auto;
+}
+
+.sb-ripped-container > p {
+    @media (max-width: 600px) {
+        font-size: 18px;
+        max-width: 74%;
+    }
+    padding-top: 40px;
+    font-size: 24px;
+    color: white;
+    max-width: 75%;
+    text-align: center;
+}
+
+.sapnus-atlasis-container {
+    @media (max-width: 600px) {
+        flex-direction: column;
+        padding-top: 0;
+    }
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    align-items: center;
+}
+
+.sapnus-atl-l,
+.sapnus-atl-r {
+    @media (min-width: 811px) {
+        font-size: 24px;
+    }
+    @media (max-width: 600px) {
+        padding-top: 60px;
+    }
+    max-width: 288px;
+    color: $dark-blue;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sapnus-atl-l > p,
+.sapnus-atl-r > p {
+    padding-top: 30px;
+}
+
+.sb-choise-container {
+    @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 120px;
+        padding-bottom: 150px;
+    }
+    padding-top: 150px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,53 @@
+.error-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 160px;
+    background: url('../../img/ErrorPageBg.png');
+    margin-top: -18px;
+}
+
+.error-page-container > h1 {
+    font-size: 96px;
+    color: $white;
+    font-weight: 700;
+    font-family: $oswald;
+
+}
+
+
+.error-page-container > h3 {
+    font-size: 24px;
+    padding-top: 40px;
+    color: $dark-blue;
+    font-weight: 600;
+    font-family: $oswald;
+
+}
+
+.error-page-container > p {
+    font-size: 18px;
+    padding-top: 30px;
+    color: $dark-blue;
+}
+
+
+.error-page-button > button  {
+    width: 233px;
+    height: 49.99px;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 215px;
+    font-weight: 500;
+    background-color: $white;
+    color: $beige;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+}
+
+
