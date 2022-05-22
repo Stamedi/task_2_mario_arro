@@ -1,6 +1,7 @@
 I coded Home page, Ideja, Piesaki sapni, Uznemejiem & Sapnu banka but I couldn't get further.
 
 HOW TO RUN THE WEBSITE
+------------------------------------------------
 If npm isn't installed then run "npm install -g npm"
 If npm is installed then install node modules with command "npm install"
 After node modules are installed run "npm start"
