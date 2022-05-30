@@ -16,7 +16,7 @@ import Form from './Form'
 
 function Home() {
   return (
-    <div>
+    <div className='home-container'>
         <section className="header-section-home">
             <div className="video-container">
                 <img src={video} alt="" className='home-video' />
@@ -53,10 +53,10 @@ function Home() {
             <article className='atbalstitaji-container'>
                 <h3>ATBALSTĪTĀJI</h3>
                 <div className="logo-container">
-                    <img src={teikumsLogo} alt="" />
-                    <img src={semLogo} alt="" />
-                    <img src={citybeeLogo} alt="" />
-                    <img src={linearisLogo} alt="" />
+                    <img src={teikumsLogo} alt="" className='logo1' />
+                    <img src={semLogo} alt="" className='logo2' />
+                    <img src={citybeeLogo} alt="" className='logo3' />
+                    <img src={linearisLogo} alt=""  className='logo4'/>
                 </div>
             </article>
         </section>

@@ -1,4 +1,7 @@
 .form-header {
+  @media (min-width: 1024px) {
+    padding-bottom: 60px;
+  }
     @media (max-width: 600px) {
       padding-bottom: 30px;
       font-size: 24px;
@@ -8,18 +11,23 @@
     font-size: 30px;
     color: $dark-blue;
     text-align: center;
-    padding-bottom: 55px;
+    padding-bottom: 50px;
 }
 
 form {
+  @media (min-width: 1024px) {
+    padding-top: 140px;
+    margin-bottom: 150px;
+  }
     @media (max-width: 600px) {
       margin-left: 20px;
       margin-right: 20px;
       padding-top: 120px;
+      margin-bottom: 100px;
     }
-    padding-top: 150px;
+    padding-top: 148px;
     max-width: 612px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .input-container {
@@ -42,6 +50,8 @@ form {
 .comment-article {
   @media (max-width: 600px) {
     font-size: 14px;
+    padding: 10px;
+    padding-bottom: 7px;
   }
     padding: 10px;
     font-weight: 400;
@@ -61,6 +71,9 @@ form {
 }
 
 .comment-article {
+  @media (max-width: 600px) {
+    padding-bottom: 125px;
+  }
     grid-column: 1 / 3;
     padding-bottom: 200px;
 }
@@ -71,13 +84,17 @@ form {
 
 
 form > p {
+  @media (min-width: 1024px) {
+    color: $dark-blue;
+    padding-top: 15px;
+  }
   @media (max-width: 600px) {
     font-size: 12px;
     padding-top: 10px;
   }
     font-size: 14px;
     color: $dark-blue;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .input-container > input {
@@ -97,10 +114,17 @@ form > p {
 }
 
 .container {
+  @media (min-width: 1024px) {
+    padding-top: 33px;
+    transform: translateX(-5px);
+    line-height: 17px;
+  }
   @media (max-width: 600px) {
+    transform: translateX(-9px);
     font-size: 12px;
-    padding-top: 15px;
-    max-width: 75%;
+    padding-top: 10px;
+    max-width: 90%;
+    padding-left: 46px;
   }
     display: block;
     position: relative;
@@ -108,13 +132,12 @@ form > p {
     margin-bottom: 12px;
     font-size: 14px;
     color: $dark-blue;
-    padding-top: 25px;
+    padding-top: 10px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
   }
 
 
@@ -128,7 +151,7 @@ form > p {
 
   .checkmark {
     position: absolute;
-    // top: 26px;
+    transform: translate(7px, 2px);
     left: 0;
     height: 16px;
     width: 16px;
@@ -172,13 +195,18 @@ form > p {
     justify-content: center;
     align-items: center;
   }
+
   .button-container > input {
+    @media (max-width: 600px) {
+      margin-top: 35px;
+      transform: scale(0.75);
+    }
     width: 182px;
     height: 62px;
     font-size: 24px;
     border-radius: 40px;
     border: none;
-    margin-top: 50px;
+    margin-top: 45px;
     background-color: $orange;
     color: $white;
 

@@ -32,7 +32,7 @@
 }
 
 .sapnis-choise-container {
-    @media (min-width: 811px) {
+    @media (min-width: 822px) {
         justify-content: space-around;
         flex-direction: row;
         align-items:unset;
@@ -44,7 +44,7 @@
 }
 
 .sapnis-choise-container > div {
-    @media (min-width: 811px) {
+    @media (min-width: 822px) {
         justify-content: space-around;
         max-width: 394px;
     }
@@ -60,7 +60,7 @@
 }
 
 .sapnis-choise-r-side {
-    @media (min-width: 811px) {
+    @media (min-width: 822px) {
         padding-top: 0;
     }
     @media (max-width: 600px) {

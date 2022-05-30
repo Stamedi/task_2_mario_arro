@@ -35,7 +35,7 @@ function Footer() {
                 <p className='footer-contacts-rekviziti'>Skatīt rekvizītus</p>
             </div>
             <div className='footer-social'>
-                <img src={fbLogo} alt="" />
+                <img src={fbLogo} alt="" className='footer-fb' />
                 <img src={igLogo} alt="" className='footer-ig' />
                 <p className='footer-tiesibas-mobile'>© SparkleHeart 2020. Visas tiesības aizsargātas.</p>
             </div>

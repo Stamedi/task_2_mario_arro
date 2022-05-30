@@ -1,57 +1,67 @@
 .footer-container {
-    @media (min-width:811px) {
+    @media (min-width:1024px) {
         background-size: cover;
         height: 100%;
         margin-top: -34px;
-        padding-top: 58px;
+        padding-top: 72px;
     }
     @media (max-width: 600px) {
         flex-direction: column;
         background-size: cover;
         padding-left: 20px;
         margin-top: -51px;
+        // padding-top: 70px;
     }
     background: url('../../img/rippedFooter.png');
     background-repeat: no-repeat;
     display: flex;
     background-size: 100% 393px;
     justify-content: space-evenly;
-    margin-top: -48px;
-    padding-top: 70px;
+    margin-top: -60px;
+    padding-top: 85px;
     color: $white;
 }
 
+.footer-logo {
+    @media (min-width: 1024px) {
+        transform: translateX(-35px);
+    }
+    @media (max-width: 600px) {
+        transform: translate(0, -31px);
+    }
+    transform: translateX(40px);
+}
+
 .footer-logo > img {
-    @media (min-width: 811px) {
-        width: 182px;
+    @media (min-width: 1024px) {
         height: 182px;
     }
 
     @media (max-width: 600px) {
-        width: 100px;
         height: 100px;
     }
-    width: 162px;
+    width: auto;
     height: 162px;
 }
 
 .footer-logo > h4 {
-    @media (min-width: 811px) {
+    @media (min-width: 1024px) {
         display: none;
+        padding-top: 30px;
     }
     @media (max-width: 600px) {
         font-size: 18px;
-        padding-top: 25px;
+        padding-top: 20px;
     }
-    padding-top: 30px;
+    padding-top: 25px;
     font-size: 24px;
     font-weight: 500;
 }
 
 .footer-logo > p {
-    @media (min-width: 811px) {
+    @media (min-width: 1024px) {
         max-width: 182px;
-        padding-top: 77px;
+        padding-top: 67px;
         font-size: 14px;
         padding-bottom: 15px;
     }
@@ -64,20 +74,22 @@
 }
 
 .footer-headers {
-    @media (min-width: 811px) {
+    @media (min-width: 1024px) {
         display: block;
         font-size: 18px;
+        transform: translateX(5px);
     }
     display: none;
 }
 
 .footer-headers > p {
-    padding-bottom: 21px;
+    padding-bottom: 22px;
 }
 
 .footer-account {
-    @media (min-width: 811px) {
+    @media (min-width: 1024px) {
         display: block;
+        transform: translateX(19px);
     }
     display: none;
 }
@@ -87,32 +99,39 @@
 {
     font-size: 24px;
     font-weight: 500;
-    padding-bottom: 12px;
+    padding-bottom: 6px;
 }
 
 .footer-contact > h4 {
-    @media (min-width: 811px) {
+    @media (min-width: 1024px) {
         display: block;
     }
     display: none;
 }
 
 .footer-contact {
+    @media (min-width: 1024px) {
+        transform: translateX(32px);
+        padding-top: 0;
+    }
+
     @media (max-width: 600px) {
         text-align: left;
+        transform: translate(0, -40px);
     }
+    transform: translateX(-43px);
     text-align: right;
-    padding-bottom: 13px;
-    padding-top: 25px;
+
+    padding-top: 32px;
 
 }
 
-.footer-contacts-rekviziti {
-    @media (min-width: 811px) {
-        display: none;
-    }
-    font-weight: 700;
-}
+// .footer-contacts-info > p {
+//     @media (min-width: 1024px) {
+//         transform: translateX(-20px);
+//     }
+// }
+
 
 .footer-account > p,
 .footer-contacts-info > p
@@ -124,31 +143,57 @@
     padding-top: 10px;
 }
 
+
+.footer-contacts-info > .footer-contacts-rekviziti {
+    @media (max-width: 600px) {
+        transform: translateY(3px);
+        font-size: 14px;
+        font-weight: 700;
+    }
+    font-weight: 700;
+}
+
 .footer-social {
-    @media (min-width: 811px) {
+    @media (min-width: 1024px) {
         padding-top: 52px;
+    }
+    @media (max-width: 600px) {
+        padding-top: 40px;
     }
     padding-top: 35px;
 }
 
 .footer-social > img {
     @media (max-width: 600px) {
-        height: 25px;
-        width: 25px;
         padding-left: 0;
     }
-    padding-left: 29px;
+    height: 25px;
+    width: auto;
+    padding-left: 25px;
 }
+.footer-fb {
+    @media (max-width: 1024px) {
+        transform: translateX(-10px);
+    }
+    @media (max-width: 600px) {
+        transform: translateX(0px);
+    }
+}
+
 .footer-ig {
+    @media (min-width: 1024px) {
+        transform: translateX(5px);
+    }
     @media (max-width: 600px) {
         margin-left: 35px;
     }
 }
 
 .footer-privacy {
-    @media (min-width: 811px) {
+    @media (min-width: 1024px) {
         font-size: 14px;
-        margin-top: 30px;
+        margin-top: 47px;
+        transform: translateX(3px);
     }
     @media (max-width: 600px) {
         font-size: 11px;
@@ -165,7 +210,7 @@
         display: block;
         font-size: 11px;
         font-weight: 500;
-        padding-top: 25px;
+        padding-top: 30px;
     }
     display: none;
 }

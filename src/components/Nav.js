@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import logo from '../assets/img/BlackLogo_3.svg'
+import logo from '../assets/img/BlackLogo_3(1).png'
 import navIcon from '../assets/img/nav-icon.png'
 import navCross from '../assets/img/navCross.png'
 

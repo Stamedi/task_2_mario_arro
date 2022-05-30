@@ -1,57 +1,76 @@
 
 .nav-container {
+    @media (min-width: 1024px) {
+        height: 120px;
+    }
+    @media (max-width: 600px) {
+        height: 67px;
+    }
     position: relative;
     background: url('../../img/rippedNav.svg');
     background-size: cover;
+    width: 100%;
+    height: 100px;
     background-repeat: no-repeat;
-    z-index: 999;
+    z-index: 1;
 }
 
+
+
 .nav {
-    @media (min-width: 811px) {
-        justify-content: space-around;
-        height: 120px;
+    @media (min-width: 1024px) {
+        justify-content: space-evenly;
+        margin: 0 -10px;
+        padding-top: 10px;
+        height: 100px;
     }
 
     @media (max-width: 600px) {
-        height: 81.09px;  
-        margin: 0 30px;
+        height: 50px;  
+        margin: 0 20px;
     }
-
     justify-content: space-between;
     display: flex;
     align-items: center;
-    height: 100px;
-    margin: 0 62px;
+    height: 90px;
+    margin: 0 80px;
 }
 
 .nav-logo > img {
-    @media (min-width: 811px) {
+    @media (min-width: 1024px) {
         width: 159px;
-        height: auto;
     }
 
     @media (max-width: 600px) {
         width: 78px;
         height: auto;
     }
-
+    display: flex;
     width: 128px;
     height: auto;
+    
+}
+
+.nav-icon {
+    @media (max-width: 600px) {
+        height: 18px;
+        width: auto;
+        transform: translate(0, 5px);
+    }
 }
 
 
-
 .nav-pages {
-    @media (min-width: 811px) {
+    @media (min-width: 1024px) {
         display: flex;
+        margin-top: 10px;
     }
     display: none;
 }
 
 .mobile-container {
     @media (max-width: 600px) {
-        top: 67px;
+        top: 50px;
     }
     position: absolute;
     width: 100%;
@@ -78,14 +97,15 @@
 
 .active-nav-page,
 .nav-page {
-    @media (min-width: 811px) {
-        margin-right: 35px;
+    @media (min-width: 1024px) {
+        margin-right: 36px;
+        transform: translateX(13px);
     }
     font-size: 18px;
 }
 
 .active-nav-page {
-    @media (min-width: 811px) {
+    @media (min-width: 1024px) {
         padding-top: 0;
     }
     padding-top: 50px;
@@ -98,7 +118,7 @@
 
 .nav-page,
 .nav-lang {
-    @media (min-width: 811px) {
+    @media (min-width: 1024px) {
         padding-top: 0;
     }
     font-weight: 500;
@@ -107,16 +127,17 @@
     text-decoration: none;
     border-bottom: 3px solid $white;
     padding-bottom: 3px;
+    font-size: 18px;
 }
 
 .nav-lang {
-    @media (min-width: 811px) {
-        padding-left: 20px;
-    }
+    @media (min-width: 1024px) {
+        padding-left: 45px;
+    }  
 }
 
 .nav-icon {
-    @media (min-width: 811px) {
+    @media (min-width: 1024px) {
         display: none;
     }
 }
