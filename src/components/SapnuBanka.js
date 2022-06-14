@@ -43,7 +43,7 @@ function SapnuBanka() {
         <img src={island} alt="" />
         <p>Tavai zināšanai, sapņus mēs krājam visu gadu, lai maijā, kad visa pasaule zied, izvēlētos pašus iedvesmojošākos. </p>
         </div>
-        <h2>SAPŅUS ATLASĪS</h2>
+        <h2 className='sapnus-atlasis-header'>SAPŅUS ATLASĪS</h2>
         <div className="sapnus-atlasis-container">
           <div className='sapnus-atl-l'>
             <img src={speaker} alt="" />
@@ -56,8 +56,8 @@ function SapnuBanka() {
         </div>
 
         <div className="sb-ripped-container">
-          <img src={rainbow} alt="" />
-          <p>Galvenais kritērijs, lai sapni izvēlētos, ir, vai to realizējot, mēs padarīsim pasauli labāku. Un pasauli labāku var padarīt gan lielas, gan mazas lietas</p>
+          <img src={rainbow} alt="" className='sb-ripped-rainbow' />
+          <p className='sb-ripped-rainbow-p'>Galvenais kritērijs, lai sapni izvēlētos, ir, vai to realizējot, mēs padarīsim pasauli labāku. Un pasauli labāku var padarīt gan lielas, gan mazas lietas</p>
         </div>
       </article>
       
@@ -68,7 +68,7 @@ function SapnuBanka() {
       </div>
       <div className="right-cont">
           <h3>VĒLIES PALĪDZĒT KĀDĀM PIEPILDĪT SAPNI?</h3>
-          <button>Uzņēmējiem</button>
+          <button className='uznemejiem'>Uzņēmējiem</button>
       </div>
     </article>
 

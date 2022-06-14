@@ -1,0 +1,220 @@
+.sapnus-atbalsta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sapnus-atbalsta-container > h1 {
+    @media (max-width: 1024px) {
+        padding-top: 65px;
+    }
+    @media (max-width: 600px) {
+        padding-top: 35px;
+        font-size: 36px;
+    }
+    font-size: 48px;
+    font-weight: 500;
+    font-family: $oswald;
+    color: $dark-blue;
+    padding-top: 85px;
+}
+
+
+.sapnus-atbalsta-container > p {
+    @media (max-width: 1024px) {
+        padding-top: 50px;
+        max-width: 80%;
+    }
+    @media (max-width: 600px) {
+        font-size: 14px;
+        padding-top: 30px;
+        max-width: 90%;
+        line-height: 17px;
+    }
+    font-size: 18px;
+    color: $dark-blue;
+    padding-top: 65px;
+    text-align: center;
+    max-width: 60%;
+}
+
+
+.custom-select {
+    @media (max-width: 1024px) {
+        padding-bottom: 70px;
+    }
+    @media (max-width: 600px) {
+        flex-direction: column;
+        padding-top: 80px;
+        margin-right: 25px;
+        margin-left: 25px;
+        padding-bottom: 80px;
+    }
+    display: flex;
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+.select-btn {
+    @media (max-width: 600px) {
+        padding: 15px 20px 10px 10px;
+    }
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 10px;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+.select-l,
+.select-r {
+    @media (max-width: 600px) {
+        font-size: 14px;
+    }
+    position: relative;
+    color: $orange;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.select-l {
+    @media (max-width: 600px) {
+        transform: translateX(0);
+    }
+    transform: translateX(-8px);
+}
+
+.select-r {
+    @media (max-width: 600px) {
+        transform: translateX(0);
+        margin-top: 40px;
+    }
+    transform: translateX(15px);
+}
+
+
+.content > hr {
+    color: $dark-blue;
+    width: 80%;
+}
+
+.options {
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.dropdown-wrapper {
+    @media (max-width: 600px) {
+        font-size: 14px;
+        width: 280px;
+        height: 41px;
+    }
+    border: none;
+    outline: none;
+    width: 288px;
+    margin-top: 15px;
+    font-size: 18px;
+    color: $dark-blue;
+    border-radius: 6px;
+    padding-left: 10px;
+    appearance: none;
+    background: rgba(196, 196, 196, 0.4);
+}
+
+.karte-container {
+    @media (max-width: 1024px) {
+        padding-bottom: 30px;
+        height: 812px;
+        background-size: cover;
+        background-position: -400px -15px;
+    }
+    @media (max-width: 600px) {
+        height: 606px;
+        width: 100%;
+        background-size: cover;
+        background-position: -430px -25px;
+        margin-bottom: -25px;
+    }
+    background: url("../../img/Karte.png");
+    background-repeat:no-repeat;
+    height: 648px;
+    width: 100%;
+    position: relative;
+    z-index: -2;
+}
+
+
+.contact-info {
+    @media (max-width: 1024px) {
+        top: 60%;
+        right: 10%;
+    }
+    @media (max-width: 600px) {
+        top: 55%;
+        right: 6%;
+        max-width: 280px;
+        flex-direction: column;
+        text-align: right;
+    }
+    position: absolute;
+    background-color: rgba(255, 168, 0, 0.5);
+    border-radius: 14px;
+    max-width: 485px;
+    top: 291px;
+    right: 357px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info > img {
+    @media (max-width: 600px) {
+       height: 55px;
+       width: auto;
+       padding-top: 15px;
+       transform: translateX(50px);
+    }
+    // padding-top: 20px;
+    padding-left: 33px;
+}
+
+.contact-info-r {
+    @media (max-width: 600px) {
+        height: 55px;
+        width: auto;
+        padding-left: 33px;
+        padding: 15px 15px 60px 15px;
+     }
+    text-align: right;
+    padding: 22px 22px 20px 0px;
+    
+}
+
+.contact-info-r > h3 {
+    @media (max-width: 600px) {
+        font-size: 18px;
+     }
+    font-size: 24px;
+    font-weight: 500;
+    font-family: $oswald;
+    color: $dark-blue;
+} 
+
+.contact-info-r > p {
+    @media (max-width: 600px) {
+        font-size: 14px;
+        padding-top: 20px;
+        max-width: 84%;
+        padding-left: 40px;
+     }
+    padding-top: 30px;
+    padding-left: 48px;
+    font-size: 18px;
+    max-width: 85%;
+    color: $dark-blue;
+}

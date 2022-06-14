@@ -35,7 +35,7 @@ function PiesakiSapni() {
         </div>
 
         <div className="ps-collage-container">
-        <img src={ripped2} alt="" className='collage-top-ripped' />
+        <img src={ripped2} alt="" className='ps-collage-top-ripped' />
             <div className="ps-header-collage">
                 <img src={psCollage1} alt="" className='psCollage1' />
                 <img src={psCollage2} alt="" className='psCollage2' />
@@ -43,7 +43,7 @@ function PiesakiSapni() {
                 <img src={psCollage4} alt="" className='psCollage4'/>
                 <img src={psCollage5} alt="" className='psCollage5' />
             </div>
-            <img src={ripped3} alt="" className='collage-bot-ripped' />
+            <img src={ripped3} alt="" className='ps-collage-bot-ripped' />
         </div>
 
       </section>

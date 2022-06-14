@@ -6,9 +6,12 @@
 }
 
 .piesaki-sapni-header > article > h1{
+    @media (max-width: 1024px) { 
+        padding-top: 70px;
+    }
     @media (max-width: 600px) {
         font-size: 36px;
-        padding-top: 50px;
+        padding-top: 35px;
     }
     font-family: $oswald;
     color: $dark-blue;
@@ -19,6 +22,10 @@
 }
 
 .piesaki-sapni-header > article > p {
+    @media (max-width: 1024px) { 
+        padding-top: 50px;
+        max-width: 80%;
+    }
     @media (max-width: 600px) {
         font-size: 14px;
         padding-top: 30px;
@@ -32,10 +39,14 @@
 }
 
 .sapnis-choise-container {
-    @media (min-width: 822px) {
-        justify-content: space-around;
+    @media (min-width: 1024px) {
+        justify-content: space-evenly;
         flex-direction: row;
         align-items:unset;
+        padding-top: 92px;
+    }
+    @media (max-width: 600px) {
+        padding-top: 80px;
     }
     display: flex;
     flex-direction: column;
@@ -44,11 +55,14 @@
 }
 
 .sapnis-choise-container > div {
-    @media (min-width: 822px) {
+    @media (min-width: 1024px) {
         justify-content: space-around;
         max-width: 394px;
     }
-    max-width: 75%;
+    @media (max-width: 600px) {
+        max-width: 85%;
+    }
+    max-width: 80%;
     text-align: center;
 }
 
@@ -60,18 +74,26 @@
 }
 
 .sapnis-choise-r-side {
-    @media (min-width: 822px) {
+    @media (min-width: 1024px) {
         padding-top: 0;
+        padding-left: 75px;
     }
     @media (max-width: 600px) {
-        padding-top: 80px;
+        padding-top: 70px;
     }
 
     padding-top: 150px;
 }
 
+.sapnis-choise-r-side > img {
+    padding-left: 40px;
+}
+
 .sapnis-choise-l-side > h2,
 .sapnis-choise-r-side > h2 {
+    @media (min-width: 1024px) {
+        padding-top: 53px;
+    }
     @media (max-width: 600px) {
         font-size: 18px;
         padding-top: 30px;
@@ -80,20 +102,23 @@
     font-size: 30px;
     color: $dark-blue;
     font-weight: 500;
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 .sapnis-choise-l-side > p,
 .sapnis-choise-r-side > p {
+    @media (min-width: 1024px) {
+        padding-top: 20px;
+        flex-grow: 1;
+    }
     @media (max-width: 600px) {
         font-size: 12px;
-        padding-top: 10px;
+        padding-top: 15px;
     }
     font-size: 18px;
     color: $dark-blue;
     font-weight: 400;
     padding-top: 30px;
-    flex-grow: 1;
 }
 
 
@@ -120,8 +145,14 @@
 }
 
 .ps-collage-container {
+    @media (min-width: 1024px) {
+        margin-top: 150px;
+    }
+    @media (max-width: 600px) {
+        margin-top: 120px;
+    }
     position: relative;
-    margin-top: 165px;
+    margin-top: 160px;
 }
 
 .ps-header-collage {
@@ -172,8 +203,50 @@
     } 
 }
 
+.ps-collage-top-ripped,
+.ps-collage-bot-ripped {
+    position: absolute;
+}
+
+.ps-collage-top-ripped {
+    @media (min-width: 1024px) {
+        top: 0;
+    }
+
+    @media (max-width: 600px) {
+        top: -5%;
+    }
+    top: -10%;
+}
+
+.ps-collage-bot-ripped {
+    @media (min-width: 1024px) {
+
+        bottom: -5.5%;
+    }
+
+    @media (max-width: 600px) {
+        bottom: -5%;
+    }
+
+    bottom: -10.5%;
+}
+
+
+
+
 
 .form-section {
+    @media (min-width: 1024px) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    @media (max-width: 600px) {
+        margin-top: -50px;
+        margin-bottom: 55px;
+    }
+    margin-top: -20px;
+    margin-bottom: 45px;
     display: flex;
     justify-content: center;
 }

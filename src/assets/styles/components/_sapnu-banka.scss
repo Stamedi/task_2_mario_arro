@@ -7,23 +7,34 @@
 }
 
 .sapnu-banka-container > h1 {
+    @media (min-width: 1024px) {
+        padding-bottom: 65px;
+        padding-top: 85px;
+        padding-bottom: 70px;
+    }
+    @media (max-width: 600px) {
+        font-size: 36px;
+        padding-top: 35px;
+        padding-bottom: 30px;
+    }
     text-align: center;
     color: $dark-blue;
     font-size: 48px;
-    padding-top: 85px;
-    padding-bottom: 60px;
+    padding-top: 70px;
+    padding-bottom: 50px;
     font-family: $oswald;
     font-weight: 500;
 }
 
 .sb-play-btn {
-    @media (min-width: 822px) {
+    @media (min-width: 1024px) {
         top: 42%;
         left: 45.5%;
     }
     @media (max-width: 600px) {
-        top: 25%;
-        left: 35%;
+        top: 30%;
+        left: 39%;
+        width: 70px;
     }
     position: absolute;
     top: 40%;
@@ -31,12 +42,17 @@
 }
 
 .merkis-container > h2 {
-
+    @media (min-width: 1024px) {
+        padding-top: 145px;
+        padding-bottom: 90px;
+    }
     @media (max-width: 600px) {
         font-size: 24px;
+        padding-top: 115px;
+        padding-bottom: 60px;
     }
-    padding-bottom: 90px;
-    padding-top: 150px;
+    padding-bottom: 95px;
+    padding-top: 140px;
     text-align: center;
     color: $dark-blue;
     font-weight: 500;
@@ -74,45 +90,101 @@
     align-items: center;
 }
 
+.merkis3 {
+    @media (max-width: 600px) {
+        transform: translateY(10px);
+    }
+    transform: translateY(-20px);
+}
+
+@media (max-width: 600px) {
+    .merkis2 {
+        transform: translateY(5px)
+    }
+}
+
+
 .merkis1 > p,
 .merkis2 > p,
 .merkis3 > p {
-    @media (min-width: 822px) {
-        max-width:37%;
+    @media (min-width: 1024px) {
+        max-width:39%;
     }
     @media (max-width: 600px) {
-        padding-top: 20px;
+        padding-top: 25px;
         font-size: 12px;
-        max-width: 75%;
+        max-width: 80%;
     }
-    max-width: 47%;
+    max-width: 49%;
     font-size: 18px;
     color: $dark-blue;    
 }
 
+.merkis1 > p {
+    @media (max-width: 600px) {
+        max-width: 85%;
+        transform: translateX(0);
+    }
+    transform: translateX(-10px);
+}
+
+.merkis2 > p {
+    @media (min-width: 1024px) {
+        max-width:48%;
+    }
+    @media (max-width: 600px) {
+        max-width: 85%;
+        transform: translateX(-5px);
+    }
+    max-width:49.5%;
+}
+
+.merkis3 > p {
+    @media (max-width: 600px) {
+        transform: translateX(0px);
+    }
+    transform: translateX(-10px);
+}
+
 .merkis1,
 .merkis3 {
+    @media (min-width: 1024px) {
+        margin-left: 7.5%;
+    }
     @media (max-width: 600px) {
         margin-left: 0;
     }
-    margin-left: 7.5%;
+    margin-left: 6%;
 }
 
 .merkis1 > img,
 .merkis3 > img {
+    @media (min-width: 1024px) {
+        padding-right: 60px;
+    }
     @media (max-width: 600px) {
         padding-right: 0;
     }
-    padding-right: 60px;
+    padding-right: 80px;
+}
+
+.merkis1 > img,
+.merkis2 > img,
+.merkis3 > img {
+    max-width: 118px;
 }
 
 .merkis2 {
+    @media (min-width: 1024px) {
+        padding: 100px 0 110px 0;
+        padding-right: 23.5%;
+    }
     @media (max-width: 600px) {
         padding: 60px 0 60px 0;
         padding-right: 0;
     }
-    padding: 100px 0 110px 0;
-    padding-right: 23.5%;
+    padding: 90px 0 110px 0;
+    padding-right: 7%;
 }
 
 .merkis2 > p {
@@ -121,7 +193,8 @@
         padding-right: 0;
     }
     text-align: end;
-    padding-right: 67px;
+    padding-right: 65px;
+    padding-left: 10px;
 }
 
 .misija-container {
@@ -129,10 +202,14 @@
 }
 
 .misija-container > h2 {
+    @media (min-width: 1024px) {
+        padding-top: 155px;
+    }
     @media (max-width: 600px) {
+        padding-top: 130px;
         font-size: 24px;
     }
-    padding-top: 150px;
+    padding-top: 130px;
     color: $dark-blue;
     font-size: 30px;
     font-family: $oswald;
@@ -140,19 +217,26 @@
 }
 
 .misija-container > p {
+    @media (min-width: 1024px) {
+        padding-top: 50px;
+    }
     @media (max-width: 600px) {
         font-size: 18px;
+        padding-top: 25px;
+        max-width: 90%;
+        transform: translateX(15px);
     }
     font-size: 24px;
     color: $dark-blue;
     font-weight: 500;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 
 .sb-ripped-container {
     @media (max-width: 600px) {
-        margin-top: 120px;
+        margin-top: 110px;
+        height: 499px;
     }
     background: url('../../img/rippedSapnuBanka.png');
     background-size: cover;
@@ -165,42 +249,64 @@
 
 .sb-ripped-container > img {
     @media (max-width: 600px) {
-        width: 90%;
+        max-height: 179px;
+        padding-top: 95px;
     }
     padding-top: 75px;
     height: auto;
 }
 
 .sb-ripped-container > p {
+    @media (min-width: 1024px) {
+        max-width: 60%;
+    }
     @media (max-width: 600px) {
         font-size: 18px;
-        max-width: 74%;
+        max-width: 86%;
+        padding-top: 30px;
     }
     padding-top: 40px;
     font-size: 24px;
     color: white;
-    max-width: 75%;
+    max-width: 77%;
     text-align: center;
 }
 
+.sapnus-atlasis-header {
+    @media (max-width:1024px) {
+        margin-top:20px;
+    }
+    @media (max-width:600px) {
+        margin-top:0px;
+        transform: translateY(-25px);
+    }
+}
+
 .sapnus-atlasis-container {
+    @media (min-width: 1024px) {
+        justify-content: space-evenly;
+        padding-top: 55px;
+    }
     @media (max-width: 600px) {
         flex-direction: column;
         padding-top: 0;
+        transform: translate(-10px);
+        align-items: center;
     }
     display: flex;
     justify-content: space-evenly;
-    padding-top: 60px;
-    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 5px;
 }
 
 .sapnus-atl-l,
 .sapnus-atl-r {
-    @media (min-width: 822px) {
+    @media (min-width: 1024px) {
         font-size: 24px;
+        max-width: 288px;
     }
     @media (max-width: 600px) {
-        padding-top: 60px;
+        padding-top: 40px;
     }
     max-width: 288px;
     color: $dark-blue;
@@ -208,20 +314,100 @@
     font-weight: 500;
 }
 
+.sapnus-atl-l > img,
+.sapnus-atl-r > img {
+    @media (max-width: 1024px) {
+        max-height: 100px;
+    }
+}
+
+.sapnus-atl-r > img {
+    @media (max-width: 600px) {
+        max-height: 80px;
+    }
+}
+
 .sapnus-atl-l > p,
 .sapnus-atl-r > p {
-    padding-top: 30px;
+    padding-top: 25px;
+}
+
+@media (max-width: 1024px) {
+    .sapnus-atl-r > p {
+        padding-top: 20px;
+    }
+}
+
+.sapnus-atl-l {
+    @media (max-width: 600px) {
+        transform: translateX(10px);
+        max-width: 90%;
+    }
+    transform: translateX(10px);
+    max-width: 30%;
+}
+
+.sapnus-atl-r {
+    @media (min-width: 1024px) {
+        padding-top: 30px;
+        transform: translateX(-10px);
+    }
+    @media (max-width: 600px) {
+        padding-top: 65px;
+        transform: translateX(10px);
+    }
+    padding-top: 10px;
+    transform: translateX(20px);
+}
+
+.sb-ripped-rainbow {
+    @media (max-width: 1024px) {
+        transform: translateX(-15px);
+    }
+    @media (max-width: 600px) {
+        transform: translateY(-20px);
+    }
+}
+
+.sb-ripped-rainbow-p {
+    @media (max-width: 600px) {
+        transform: translateY(-20px);
+    }
 }
 
 .sb-choise-container {
+        @media (min-width: 1024px) {
+        padding-top: 155px;
+        justify-content: center;
+        padding-bottom: 185px;
+    }
     @media (max-width: 600px) {
         flex-direction: column;
         align-items: center;
-        padding-top: 120px;
-        padding-bottom: 150px;
+        padding-top: 20px;
+        padding-bottom: 200px;
     }
     padding-top: 150px;
     padding-bottom: 200px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+.left-cont {
+    @media (min-width: 1024px) {
+        transform: translateX(-70px);
+    }
+}
+
+.right-cont {
+    @media (min-width: 1024px) {
+        transform: translateX(120px);
+    }
+    @media (max-width: 600px) {
+        transform: translateY(20px);
+    }
+}
+
+.uznemejiem,
+.sapnotajiem {
+    transform: translateY(20px);
 }

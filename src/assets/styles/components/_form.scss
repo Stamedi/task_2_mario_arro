@@ -26,7 +26,7 @@ form {
       margin-bottom: 100px;
     }
     padding-top: 148px;
-    max-width: 612px;
+    width: 612px;
     margin-bottom: 150px;
 }
 
@@ -44,10 +44,20 @@ form {
     row-gap: 15px;
 }
 
+.uznemejiem-input-padding {
+  @media (max-width: 1024px) {
+    padding-top: 45px;
+  }
+  @media (max-width: 600px) {
+    padding-top: 0px;
+  }
+}
+
 .name-article,
 .email-article,
 .phone-article,
-.comment-article {
+.comment-article,
+.company-article {
   @media (max-width: 600px) {
     font-size: 14px;
     padding: 10px;
@@ -65,7 +75,6 @@ form {
   .phone-article,
   .comment-article {
     grid-column: 1 / 3;
-
   }
 
 }
@@ -78,7 +87,8 @@ form {
     padding-bottom: 200px;
 }
 
-.phone-article {
+.phone-article,
+.company-article {
     grid-column: 1 / 3;
 }
 
@@ -103,6 +113,12 @@ form > p {
     border-radius: 6px;
 }
 
+.uznemejiem-form-padding {
+  @media (min-width: 1024px) {
+    padding-top: 30px;
+  }
+}
+
 ::-webkit-input-placeholder,
 :-moz-placeholder,
 ::-moz-placeholder,
@@ -116,8 +132,8 @@ form > p {
 .container {
   @media (min-width: 1024px) {
     padding-top: 33px;
-    transform: translateX(-5px);
-    line-height: 17px;
+    padding-left: 35px;
+    // transform: translateX(10px);
   }
   @media (max-width: 600px) {
     transform: translateX(-9px);
@@ -222,3 +238,29 @@ form > p {
     }
 }
 
+
+.sent-mail-container {
+  color: $orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 45px;
+}
+
+.sent-mail-container > h3 {
+  @media (max-width:600px) {
+    font-size: 18px;
+  }
+  font-size: 24px;
+}
+
+.sent-mail-container > p {
+  @media (max-width:600px) {
+    font-size: 14px;
+  }
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 30px;
+}
