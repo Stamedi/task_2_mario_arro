@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 import arrowDown from '../assets/img/arrowDown.png'
 import marker from '../assets/img/marker.png'
 import { GoogleMap, useLoadScript, Marker} from '@react-google-maps/api'
@@ -143,6 +143,7 @@ function SapnusAtbalsta() {
     {isLoaded ?
       <GoogleMap
       options={options}
+    
       zoom={13}
       center={currentPilseta.map}
       mapContainerClassName="map-container">
