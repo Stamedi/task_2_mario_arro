@@ -1,4 +1,4 @@
-I coded Home page, Ideja, Piesaki sapni, Uznemejiem & Sapnu banka but I couldn't get further.
+
 
 HOW TO RUN THE WEBSITE
 ------------------------------------------------
