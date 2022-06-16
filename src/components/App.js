@@ -49,7 +49,9 @@ function App() {
         &#8593;
       </button>
     ) : ''}
+    <div className='footer'>
     <Footer/>
+    </div>
     </div>
   );
 }
